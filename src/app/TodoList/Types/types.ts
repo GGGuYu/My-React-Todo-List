@@ -3,5 +3,3 @@ interface Todo {
     content: string,
     completed: false
 }
-
-

@@ -1,10 +1,16 @@
+interface ToolsProps{
+    changeSelected:(select:string) => void
+}
 
 
+function Tools({ changeSelected }:ToolsProps) {
+    
 
-function Tools() {
     return (
         <div>
-            Tools
+            <button onClick={() => {changeSelected('all')}}>all</button>
+            <button onClick={() => {changeSelected('completed')}}>completed</button>
+            <button onClick={() => {changeSelected('active')}}>active</button>
         </div>
     )
 }
